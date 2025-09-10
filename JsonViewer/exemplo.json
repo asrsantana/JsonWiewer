@@ -1,0 +1,107 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "idade": 30,
+      "ativo": true,
+      "endereco": {
+        "rua": "Rua das Flores, 123",
+        "cidade": "São Paulo",
+        "cep": "01234-567",
+        "coordenadas": {
+          "latitude": -23.5505,
+          "longitude": -46.6333
+        }
+      },
+      "telefones": [
+        {
+          "tipo": "celular",
+          "numero": "(11) 99999-9999"
+        },
+        {
+          "tipo": "residencial",
+          "numero": "(11) 3333-3333"
+        }
+      ],
+      "tags": ["cliente", "premium", "ativo"]
+    },
+    {
+      "id": 2,
+      "nome": "Maria Santos",
+      "email": "maria@email.com",
+      "idade": 25,
+      "ativo": false,
+      "endereco": {
+        "rua": "Av. Paulista, 1000",
+        "cidade": "São Paulo",
+        "cep": "01310-100",
+        "coordenadas": {
+          "latitude": -23.5618,
+          "longitude": -46.6565
+        }
+      },
+      "telefones": [
+        {
+          "tipo": "celular",
+          "numero": "(11) 88888-8888"
+        }
+      ],
+      "tags": ["cliente", "inativo"]
+    },
+    {
+      "id": 3,
+      "nome": "Pedro Oliveira",
+      "email": "pedro@email.com",
+      "idade": 35,
+      "ativo": true,
+      "endereco": {
+        "rua": "Rua Augusta, 500",
+        "cidade": "São Paulo",
+        "cep": "01305-000",
+        "coordenadas": {
+          "latitude": -23.5489,
+          "longitude": -46.6388
+        }
+      },
+      "telefones": [
+        {
+          "tipo": "comercial",
+          "numero": "(11) 7777-7777"
+        },
+        {
+          "tipo": "celular",
+          "numero": "(11) 66666-6666"
+        }
+      ],
+      "tags": ["cliente", "premium", "vip"]
+    }
+  ],
+  "configuracoes": {
+    "versao": "1.0.0",
+    "ambiente": "producao",
+    "debug": false,
+    "limites": {
+      "max_usuarios": 1000,
+      "timeout": 30,
+      "retry_attempts": 3
+    },
+    "recursos": {
+      "notificacoes": true,
+      "backup_automatico": true,
+      "logs_detalhados": false
+    }
+  },
+  "estatisticas": {
+    "total_usuarios": 3,
+    "usuarios_ativos": 2,
+    "usuarios_premium": 2,
+    "ultima_atualizacao": "2024-01-15T10:30:00Z",
+    "metricas": {
+      "logins_hoje": 15,
+      "novos_cadastros_mes": 5,
+      "taxa_conversao": 0.75
+    }
+  }
+}
